@@ -8,7 +8,7 @@ import numpy as np
 species = ['setosa', 'versicolor', 'virginica']
 image = ['setosa.jpg', 'versicolor.jpg', 'virginica.jpg']
 with open('irismodel.joblib', 'rb') as f:
-    model = pickle.load(f)
+    model = joblib.load(f)
 
 
 def main():
